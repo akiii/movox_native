@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B824F48E15B883CE00432AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F48D15B883CE00432AF3 /* UIKit.framework */; };
+		B824F49015B883CE00432AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F48F15B883CE00432AF3 /* Foundation.framework */; };
+		B824F49215B883CE00432AF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F49115B883CE00432AF3 /* CoreGraphics.framework */; };
+		B824F49415B883CE00432AF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F49315B883CE00432AF3 /* CoreData.framework */; };
+		B824F49A15B883CE00432AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B824F49815B883CE00432AF3 /* InfoPlist.strings */; };
+		B824F49C15B883CE00432AF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F49B15B883CE00432AF3 /* main.m */; };
+		B824F4A015B883CE00432AF3 /* MovoxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */; };
+		B824F4A315B883CE00432AF3 /* Movox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B824F4A115B883CE00432AF3 /* Movox.xcdatamodeld */; };
+		B824F4AB15B883CE00432AF3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F4AA15B883CE00432AF3 /* SenTestingKit.framework */; };
+		B824F4AC15B883CE00432AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F48D15B883CE00432AF3 /* UIKit.framework */; };
+		B824F4AD15B883CE00432AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F48F15B883CE00432AF3 /* Foundation.framework */; };
+		B824F4AE15B883CE00432AF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F49315B883CE00432AF3 /* CoreData.framework */; };
+		B824F4B615B883CE00432AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B824F4B415B883CE00432AF3 /* InfoPlist.strings */; };
+		B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F4B815B883CE00432AF3 /* MovoxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B824F4AF15B883CE00432AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B824F48015B883CE00432AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B824F48815B883CE00432AF3;
+			remoteInfo = Movox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B824F48915B883CE00432AF3 /* Movox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B824F48D15B883CE00432AF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B824F48F15B883CE00432AF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B824F49115B883CE00432AF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B824F49315B883CE00432AF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B824F49715B883CE00432AF3 /* Movox-Info.plist */ = {isa = PBXFileReference; path = "Movox-Info.plist"; sourceTree = "<group>"; };
+		B824F49915B883CE00432AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B824F49B15B883CE00432AF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B824F49D15B883CE00432AF3 /* Movox-Prefix.pch */ = {isa = PBXFileReference; path = "Movox-Prefix.pch"; sourceTree = "<group>"; };
+		B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */ = {isa = PBXFileReference; path = MovoxAppDelegate.h; sourceTree = "<group>"; };
+		B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovoxAppDelegate.m; sourceTree = "<group>"; };
+		B824F4A215B883CE00432AF3 /* Movox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movox.xcdatamodel; sourceTree = "<group>"; };
+		B824F4A915B883CE00432AF3 /* MovoxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovoxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B824F4AA15B883CE00432AF3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B824F4B315B883CE00432AF3 /* MovoxTests-Info.plist */ = {isa = PBXFileReference; path = "MovoxTests-Info.plist"; sourceTree = "<group>"; };
+		B824F4B515B883CE00432AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B824F4B715B883CE00432AF3 /* MovoxTests.h */ = {isa = PBXFileReference; path = MovoxTests.h; sourceTree = "<group>"; };
+		B824F4B815B883CE00432AF3 /* MovoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovoxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B824F48615B883CE00432AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F48E15B883CE00432AF3 /* UIKit.framework in Frameworks */,
+				B824F49015B883CE00432AF3 /* Foundation.framework in Frameworks */,
+				B824F49215B883CE00432AF3 /* CoreGraphics.framework in Frameworks */,
+				B824F49415B883CE00432AF3 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B824F4A515B883CE00432AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F4AB15B883CE00432AF3 /* SenTestingKit.framework in Frameworks */,
+				B824F4AC15B883CE00432AF3 /* UIKit.framework in Frameworks */,
+				B824F4AD15B883CE00432AF3 /* Foundation.framework in Frameworks */,
+				B824F4AE15B883CE00432AF3 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B824F47E15B883CE00432AF3 = {
+			isa = PBXGroup;
+			children = (
+				B824F49515B883CE00432AF3 /* Movox */,
+				B824F4B115B883CE00432AF3 /* MovoxTests */,
+				B824F48C15B883CE00432AF3 /* Frameworks */,
+				B824F48A15B883CE00432AF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B824F48A15B883CE00432AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B824F48915B883CE00432AF3 /* Movox.app */,
+				B824F4A915B883CE00432AF3 /* MovoxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B824F48C15B883CE00432AF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B824F48D15B883CE00432AF3 /* UIKit.framework */,
+				B824F48F15B883CE00432AF3 /* Foundation.framework */,
+				B824F49115B883CE00432AF3 /* CoreGraphics.framework */,
+				B824F49315B883CE00432AF3 /* CoreData.framework */,
+				B824F4AA15B883CE00432AF3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B824F49515B883CE00432AF3 /* Movox */ = {
+			isa = PBXGroup;
+			children = (
+				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
+				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
+				B824F4A115B883CE00432AF3 /* Movox.xcdatamodeld */,
+				B824F49615B883CE00432AF3 /* Supporting Files */,
+			);
+			path = Movox;
+			sourceTree = "<group>";
+		};
+		B824F49615B883CE00432AF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B824F49715B883CE00432AF3 /* Movox-Info.plist */,
+				B824F49815B883CE00432AF3 /* InfoPlist.strings */,
+				B824F49B15B883CE00432AF3 /* main.m */,
+				B824F49D15B883CE00432AF3 /* Movox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B824F4B115B883CE00432AF3 /* MovoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				B824F4B715B883CE00432AF3 /* MovoxTests.h */,
+				B824F4B815B883CE00432AF3 /* MovoxTests.m */,
+				B824F4B215B883CE00432AF3 /* Supporting Files */,
+			);
+			path = MovoxTests;
+			sourceTree = "<group>";
+		};
+		B824F4B215B883CE00432AF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B824F4B315B883CE00432AF3 /* MovoxTests-Info.plist */,
+				B824F4B415B883CE00432AF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B824F48815B883CE00432AF3 /* Movox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B824F4BC15B883CE00432AF3 /* Build configuration list for PBXNativeTarget "Movox" */;
+			buildPhases = (
+				B824F48515B883CE00432AF3 /* Sources */,
+				B824F48615B883CE00432AF3 /* Frameworks */,
+				B824F48715B883CE00432AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movox;
+			productName = Movox;
+			productReference = B824F48915B883CE00432AF3 /* Movox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B824F4A815B883CE00432AF3 /* MovoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B824F4BF15B883CE00432AF3 /* Build configuration list for PBXNativeTarget "MovoxTests" */;
+			buildPhases = (
+				B824F4A415B883CE00432AF3 /* Sources */,
+				B824F4A515B883CE00432AF3 /* Frameworks */,
+				B824F4A615B883CE00432AF3 /* Resources */,
+				B824F4A715B883CE00432AF3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B824F4B015B883CE00432AF3 /* PBXTargetDependency */,
+			);
+			name = MovoxTests;
+			productName = MovoxTests;
+			productReference = B824F4A915B883CE00432AF3 /* MovoxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B824F48015B883CE00432AF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Movox;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B824F48315B883CE00432AF3 /* Build configuration list for PBXProject "Movox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B824F47E15B883CE00432AF3;
+			productRefGroup = B824F48A15B883CE00432AF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B824F48815B883CE00432AF3 /* Movox */,
+				B824F4A815B883CE00432AF3 /* MovoxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B824F48715B883CE00432AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F49A15B883CE00432AF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B824F4A615B883CE00432AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F4B615B883CE00432AF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B824F4A715B883CE00432AF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B824F48515B883CE00432AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F49C15B883CE00432AF3 /* main.m in Sources */,
+				B824F4A015B883CE00432AF3 /* MovoxAppDelegate.m in Sources */,
+				B824F4A315B883CE00432AF3 /* Movox.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B824F4A415B883CE00432AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B824F4B015B883CE00432AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B824F48815B883CE00432AF3 /* Movox */;
+			targetProxy = B824F4AF15B883CE00432AF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B824F49815B883CE00432AF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B824F49915B883CE00432AF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B824F4B415B883CE00432AF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B824F4B515B883CE00432AF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B824F4BA15B883CE00432AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B824F4BB15B883CE00432AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B824F4BD15B883CE00432AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movox/Movox-Prefix.pch";
+				INFOPLIST_FILE = "Movox/Movox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B824F4BE15B883CE00432AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movox/Movox-Prefix.pch";
+				INFOPLIST_FILE = "Movox/Movox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B824F4C015B883CE00432AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Movox.app/Movox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movox/Movox-Prefix.pch";
+				INFOPLIST_FILE = "MovoxTests/MovoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B824F4C115B883CE00432AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Movox.app/Movox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Movox/Movox-Prefix.pch";
+				INFOPLIST_FILE = "MovoxTests/MovoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B824F48315B883CE00432AF3 /* Build configuration list for PBXProject "Movox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B824F4BA15B883CE00432AF3 /* Debug */,
+				B824F4BB15B883CE00432AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B824F4BC15B883CE00432AF3 /* Build configuration list for PBXNativeTarget "Movox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B824F4BD15B883CE00432AF3 /* Debug */,
+				B824F4BE15B883CE00432AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B824F4BF15B883CE00432AF3 /* Build configuration list for PBXNativeTarget "MovoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B824F4C015B883CE00432AF3 /* Debug */,
+				B824F4C115B883CE00432AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B824F4A115B883CE00432AF3 /* Movox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B824F4A215B883CE00432AF3 /* Movox.xcdatamodel */,
+			);
+			currentVersion = B824F4A215B883CE00432AF3 /* Movox.xcdatamodel */;
+			path = Movox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B824F48015B883CE00432AF3 /* Project object */;
+}
