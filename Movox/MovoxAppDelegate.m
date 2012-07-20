@@ -6,7 +6,12 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
+#import <FBiOSSDK/FacebookSDK.h>
+
 #import "MovoxAppDelegate.h"
+#import "MVLoginViewController.h"
+#import "MVRootViewController.h"
+
 
 @implementation MovoxAppDelegate
 
@@ -15,12 +20,31 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [[FBSession activeSession] handleOpenURL:url];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    if ([FBSession activeSession].state == FBSessionStateCreated) {
+        MVLoginViewController *loginViewController = [[MVLoginViewController alloc] initWithNibName:nil bundle:nil];        
+        [self.window addSubview:loginViewController.view];
+        
+        loginViewController.onLoginSuccessed = ^(){
+            [loginViewController.view removeFromSuperview];
+            [self.window addSubview:[[MVRootViewController alloc] initWithNibName:nil bundle:nil].view];
+        };        
+    }else {
+        [self.window addSubview:[[MVRootViewController alloc] initWithNibName:nil bundle:nil].view];
+    }
     return YES;
 }
 
@@ -44,11 +68,15 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if ([FBSession activeSession].state == FBSessionStateCreatedOpening) {
+
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
+    [[FBSession activeSession] close];
     [self saveContext];
 }
 

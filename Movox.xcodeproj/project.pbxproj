@@ -23,6 +23,9 @@
 		B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F4B815B883CE00432AF3 /* MovoxTests.m */; };
 		B824F4D315B886BE00432AF3 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */; };
 		B824F4D515B8874900432AF3 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */; };
+		B824F50815B92C1500432AF3 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50715B92C1500432AF3 /* MVLoginViewController.m */; };
+		B824F50B15B92C3E00432AF3 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */; };
+		B824F50E15B9383000432AF3 /* MVRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50D15B9383000432AF3 /* MVRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,13 @@
 		B824F4B815B883CE00432AF3 /* MovoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovoxTests.m; sourceTree = "<group>"; };
 		B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBiOSSDK.framework; path = ../../Documents/FacebookSDK/FBiOSSDK.framework; sourceTree = "<group>"; };
 		B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBiOSSDKResources.bundle; path = ../../Documents/FacebookSDK/FBiOSSDK.framework/Versions/A/Resources/FBiOSSDKResources.bundle; sourceTree = "<group>"; };
+		B824F50515B9261F00432AF3 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
+		B824F50615B92C1500432AF3 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
+		B824F50715B92C1500432AF3 /* MVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginViewController.m; sourceTree = "<group>"; };
+		B824F50915B92C3E00432AF3 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
+		B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
+		B824F50C15B9383000432AF3 /* MVRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootViewController.h; sourceTree = "<group>"; };
+		B824F50D15B9383000432AF3 /* MVRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,13 @@
 			children = (
 				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
 				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
+				B824F50515B9261F00432AF3 /* MVBlocks.h */,
+				B824F50615B92C1500432AF3 /* MVLoginViewController.h */,
+				B824F50715B92C1500432AF3 /* MVLoginViewController.m */,
+				B824F50915B92C3E00432AF3 /* MVLoginMainView.h */,
+				B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */,
+				B824F50C15B9383000432AF3 /* MVRootViewController.h */,
+				B824F50D15B9383000432AF3 /* MVRootViewController.m */,
 				B824F4A115B883CE00432AF3 /* Movox.xcdatamodeld */,
 				B824F49615B883CE00432AF3 /* Supporting Files */,
 			);
@@ -269,6 +286,9 @@
 				B824F49C15B883CE00432AF3 /* main.m in Sources */,
 				B824F4A015B883CE00432AF3 /* MovoxAppDelegate.m in Sources */,
 				B824F4A315B883CE00432AF3 /* Movox.xcdatamodeld in Sources */,
+				B824F50815B92C1500432AF3 /* MVLoginViewController.m in Sources */,
+				B824F50B15B92C3E00432AF3 /* MVLoginMainView.m in Sources */,
+				B824F50E15B9383000432AF3 /* MVRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +462,7 @@
 				B824F4BE15B883CE00432AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B824F4BF15B883CE00432AF3 /* Build configuration list for PBXNativeTarget "MovoxTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +471,7 @@
 				B824F4C115B883CE00432AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
