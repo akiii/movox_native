@@ -23,9 +23,11 @@
 		B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F4B815B883CE00432AF3 /* MovoxTests.m */; };
 		B824F4D315B886BE00432AF3 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */; };
 		B824F4D515B8874900432AF3 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */; };
-		B824F50815B92C1500432AF3 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50715B92C1500432AF3 /* MVLoginViewController.m */; };
-		B824F50B15B92C3E00432AF3 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */; };
-		B824F50E15B9383000432AF3 /* MVRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F50D15B9383000432AF3 /* MVRootViewController.m */; };
+		B85D4D4515BBD0C400B5EFA1 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */; };
+		B85D4D4615BBD0C400B5EFA1 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */; };
+		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
+		B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */; };
+		B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +61,17 @@
 		B824F4B815B883CE00432AF3 /* MovoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovoxTests.m; sourceTree = "<group>"; };
 		B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBiOSSDK.framework; path = ../../Documents/FacebookSDK/FBiOSSDK.framework; sourceTree = "<group>"; };
 		B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBiOSSDKResources.bundle; path = ../../Documents/FacebookSDK/FBiOSSDK.framework/Versions/A/Resources/FBiOSSDKResources.bundle; sourceTree = "<group>"; };
-		B824F50515B9261F00432AF3 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
-		B824F50615B92C1500432AF3 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
-		B824F50715B92C1500432AF3 /* MVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginViewController.m; sourceTree = "<group>"; };
-		B824F50915B92C3E00432AF3 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
-		B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
-		B824F50C15B9383000432AF3 /* MVRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootViewController.h; sourceTree = "<group>"; };
-		B824F50D15B9383000432AF3 /* MVRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootViewController.m; sourceTree = "<group>"; };
+		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
+		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
+		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
+		B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginViewController.m; sourceTree = "<group>"; };
+		B85D4D4815BBD0E400B5EFA1 /* MVBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
+		B85D4D4A15BBD10F00B5EFA1 /* MVRootMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootMainViewController.h; sourceTree = "<group>"; };
+		B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootMainViewController.m; sourceTree = "<group>"; };
+		B85D4D4C15BBD10F00B5EFA1 /* MVRootSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSecondViewController.h; sourceTree = "<group>"; };
+		B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSecondViewController.m; sourceTree = "<group>"; };
+		B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootTabBarController.h; sourceTree = "<group>"; };
+		B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +139,9 @@
 			children = (
 				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
 				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
-				B824F50515B9261F00432AF3 /* MVBlocks.h */,
-				B824F50615B92C1500432AF3 /* MVLoginViewController.h */,
-				B824F50715B92C1500432AF3 /* MVLoginViewController.m */,
-				B824F50915B92C3E00432AF3 /* MVLoginMainView.h */,
-				B824F50A15B92C3E00432AF3 /* MVLoginMainView.m */,
-				B824F50C15B9383000432AF3 /* MVRootViewController.h */,
-				B824F50D15B9383000432AF3 /* MVRootViewController.m */,
+				B85D4D4715BBD0E400B5EFA1 /* Common */,
+				B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */,
+				B85D4D4915BBD10F00B5EFA1 /* Main */,
 				B824F4A115B883CE00432AF3 /* Movox.xcdatamodeld */,
 				B824F49615B883CE00432AF3 /* Supporting Files */,
 			);
@@ -174,6 +176,38 @@
 				B824F4B415B883CE00432AF3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */,
+				B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */,
+				B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */,
+				B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */,
+			);
+			path = FacebookLogin;
+			sourceTree = "<group>";
+		};
+		B85D4D4715BBD0E400B5EFA1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B85D4D4815BBD0E400B5EFA1 /* MVBlocks.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B85D4D4915BBD10F00B5EFA1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B85D4D4A15BBD10F00B5EFA1 /* MVRootMainViewController.h */,
+				B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */,
+				B85D4D4C15BBD10F00B5EFA1 /* MVRootSecondViewController.h */,
+				B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */,
+				B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */,
+				B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +320,11 @@
 				B824F49C15B883CE00432AF3 /* main.m in Sources */,
 				B824F4A015B883CE00432AF3 /* MovoxAppDelegate.m in Sources */,
 				B824F4A315B883CE00432AF3 /* Movox.xcdatamodeld in Sources */,
-				B824F50815B92C1500432AF3 /* MVLoginViewController.m in Sources */,
-				B824F50B15B92C3E00432AF3 /* MVLoginMainView.m in Sources */,
-				B824F50E15B9383000432AF3 /* MVRootViewController.m in Sources */,
+				B85D4D4515BBD0C400B5EFA1 /* MVLoginMainView.m in Sources */,
+				B85D4D4615BBD0C400B5EFA1 /* MVLoginViewController.m in Sources */,
+				B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */,
+				B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */,
+				B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
