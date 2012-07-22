@@ -7,6 +7,9 @@
 //
 
 #import "MVRootTabBarController.h"
+#import "MVRootMainViewController.h"
+#import "MVRootSecondViewController.h"
+#import "MVRootSettingsViewController.h"
 
 @implementation MVRootTabBarController
 
@@ -18,7 +21,10 @@
         MVRootSecondViewController *secondViewController = [[MVRootSecondViewController alloc] initWithNibName:nil bundle:nil];
         secondViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:1];
         
-        [self setViewControllers:[NSArray arrayWithObjects:mainViewController, secondViewController, nil] animated:NO];
+        MVRootSettingsViewController *settingsViewController = [[MVRootSettingsViewController alloc] initWithNibName:nil bundle:nil];
+        settingsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"settings" image:nil tag:2];
+        
+        [self setViewControllers:[NSArray arrayWithObjects:mainViewController, secondViewController, settingsViewController, nil] animated:NO];
     }
     return self;
 }

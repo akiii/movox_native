@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVRootMainViewController.h"
-#import "MVRootSecondViewController.h"
 
 @interface MVRootTabBarController : UITabBarController <UITabBarControllerDelegate, UITabBarDelegate>
 @end
