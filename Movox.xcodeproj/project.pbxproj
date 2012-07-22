@@ -28,6 +28,7 @@
 		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
 		B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */; };
 		B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */; };
+		B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSecondViewController.m; sourceTree = "<group>"; };
 		B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootTabBarController.h; sourceTree = "<group>"; };
 		B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootTabBarController.m; sourceTree = "<group>"; };
+		B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSettingsViewController.h; sourceTree = "<group>"; };
+		B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,12 +203,14 @@
 		B85D4D4915BBD10F00B5EFA1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */,
+				B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */,
 				B85D4D4A15BBD10F00B5EFA1 /* MVRootMainViewController.h */,
 				B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */,
 				B85D4D4C15BBD10F00B5EFA1 /* MVRootSecondViewController.h */,
 				B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */,
-				B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */,
-				B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */,
+				B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */,
+				B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */,
 				B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */,
 				B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */,
+				B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
