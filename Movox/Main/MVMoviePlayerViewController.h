@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "MVBlocks.h"
 
-@interface MVMoviePlayer : NSObject
-
+@interface MVMoviePlayerViewController : MPMoviePlayerViewController {
+    ActionBlock onPressedCancel;
+}
+@property (copy, nonatomic) ActionBlock onPressedCancel;
+- (void)playWithContentUrl:(NSURL *)url;
 @end
