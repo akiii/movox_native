@@ -7,6 +7,7 @@
 //
 
 #import "MVRootSecondViewController.h"
+#import "MVViewSizeMacro.h"
 
 @interface MVRootSecondViewController ()
 
@@ -26,10 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    
-    self.view.frame = CGRectMake(0, 0, screenSize.width, screenSize.height);
+	// Do any additional setup after loading the view.    
+    self.view.frame = CGRectMake(0, 0, SizeOfScreen.width, SizeOfScreen.height);
     self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:255];
     
     UILabel *label = [[UILabel alloc] init];

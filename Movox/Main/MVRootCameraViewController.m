@@ -9,6 +9,7 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "MVRootCameraViewController.h"
 #import "MVMoviePlayerViewController.h"
+#import "MVViewSizeMacro.h"
 
 typedef enum CameraState{
     CameraStateShooting = 0,
@@ -55,9 +56,7 @@ typedef enum CameraState{
     [self.imagePickerController startVideoCapture];
 }
 
-- (void)showCameraWithAnimation:(BOOL)animation{
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    
+- (void)showCameraWithAnimation:(BOOL)animation{    
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         NSLog(@"no camera");
         return;
@@ -75,7 +74,7 @@ typedef enum CameraState{
     self.imagePickerController.cameraViewTransform = CGAffineTransformScale(self.imagePickerController.cameraViewTransform, 1.0, 1.3);
     
     
-    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, screenSize.height-49, screenSize.width, 49)];
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, SizeOfScreen.height-SizeOfToolBar.height, SizeOfScreen.width, SizeOfToolBar.height)];
     toolBar.tintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:255];
     [self.imagePickerController.view addSubview:toolBar];
         

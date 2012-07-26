@@ -7,13 +7,19 @@
 //
 
 #import "MVNavigationController.h"
+#import "MVViewSizeMacro.h"
 
 @implementation MVNavigationController
 
-+ (MVNavigationController *)navigationControllerWithRootViewController:(UIViewController *)viewController tabBarTitle:(NSString *)title tabBarImageName:(NSString *)imageName tabBarTag:(int)tag{
++ (MVNavigationController *)navigationControllerWithRootViewController:(UIViewController *)viewController
+                                                           tabBarTitle:(NSString *)title
+                                                       tabBarImageName:(NSString *)imageName
+                                                             tabBarTag:(int)tag{
+    MVNavigationController *navigationController = [[MVNavigationController alloc] initWithRootViewController:viewController];
+    navigationController.navigationBar.frame = CGRectMake(0, 0, SizeOfNavigationBar.width, SizeOfNavigationBar.height);
     viewController.navigationItem.title = title;
     viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:[UIImage imageNamed:imageName] tag:tag];
-    return [[MVNavigationController alloc] initWithRootViewController:viewController];
+    return navigationController;
 }
 
 @end

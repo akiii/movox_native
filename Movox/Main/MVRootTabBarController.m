@@ -15,6 +15,8 @@
 #import "MVRootSecondViewController.h"
 #import "MVRootSettingsViewController.h"
 
+#import "MVViewSizeMacro.h"
+
 typedef enum MVRootTabBarTag {
     MVRootTabBarTagFriends  = 0,
     MVRootTabBarTagMain2    = 1,
@@ -52,7 +54,9 @@ typedef enum MVRootTabBarTag {
         MVNavigationController *settingsNavigationController = [MVNavigationController navigationControllerWithRootViewController:[[MVRootSettingsViewController alloc] initWithNibName:nil bundle:nil] tabBarTitle:@"settings" tabBarImageName:@"gear.png" tabBarTag:MVRootTabBarTagSettings];
         
         [self setViewControllers:[NSArray arrayWithObjects:friendsNavigationController, mainViewController2, cameraViewController, secondViewController, settingsNavigationController, nil] animated:NO];
-
+        
+        self.tabBar.frame = CGRectMake(0, SizeOfScreen.height - SizeOfToolBar.height, SizeOfToolBar.width, SizeOfToolBar.height);
+        
         self.preViewControllerTag = MVRootTabBarTagMain2;
         self.selectedIndex = MVRootTabBarTagMain2;
     }
