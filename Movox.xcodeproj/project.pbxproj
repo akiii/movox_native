@@ -82,6 +82,7 @@
 		B826912A15C1C56A00B932E1 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
 		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNetworkConnector.h; sourceTree = "<group>"; };
 		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNetworkConnector.m; sourceTree = "<group>"; };
+		B826913815C1F36100B932E1 /* MVViewSizeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVViewSizeMacro.h; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
 				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
 				B826912A15C1C56A00B932E1 /* MVBlocks.h */,
+				B826913815C1F36100B932E1 /* MVViewSizeMacro.h */,
 				B85D4D4715BBD0E400B5EFA1 /* Common */,
 				B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */,
 				B85D4D4915BBD10F00B5EFA1 /* Main */,
