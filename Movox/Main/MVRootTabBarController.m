@@ -42,6 +42,7 @@ typedef enum MVRootTabBarTag {
         self.cameraViewController = [[MVRootCameraViewController alloc] initWithNibName:nil bundle:nil];
         self.cameraViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:MVRootTabBarTagCamera];
         self.cameraViewController.onCloseCamera = ^(){
+            [self.cameraViewController dismissModalViewControllerAnimated:YES];
             self.selectedIndex = self.preViewControllerTag;
         };
         
