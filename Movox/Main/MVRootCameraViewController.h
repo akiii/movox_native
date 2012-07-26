@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MVBlocks.h"
 
-@interface MVRootCameraViewController : UIViewController
-
+@interface MVRootCameraViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
+    ActionBlock onCloseCamera;
+}
+@property (copy, nonatomic) ActionBlock onCloseCamera;
+- (void)showCameraWithAnimation:(BOOL)animation;
 @end
