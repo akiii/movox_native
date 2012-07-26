@@ -106,6 +106,13 @@ typedef enum CameraState{
         [self.moviePlayerViewController dismissModalViewControllerAnimated:NO];
         [self showCameraWithAnimation:NO];
     };
+    
+    aPlayer.onPressedShare = ^(){
+        NSString *movieFileString = [[url absoluteString] stringByReplacingOccurrencesOfString:@"file://localhost" withString:@""];
+        UISaveVideoAtPathToSavedPhotosAlbum(movieFileString, nil, nil, nil);
+        [self.moviePlayerViewController dismissModalViewControllerAnimated:YES];
+        if (self.onCloseCamera) self.onCloseCamera();
+    };
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA,__MAC_NA,__IPHONE_2_0,__IPHONE_3_0){
@@ -118,14 +125,10 @@ typedef enum CameraState{
     
     NSURL *movieUrl = [info valueForKey:UIImagePickerControllerMediaURL];
     [self showMovieWithContentUrl:movieUrl];
-
-//    NSString *movieFileString = [[[info valueForKey:UIImagePickerControllerMediaURL] absoluteString] stringByReplacingOccurrencesOfString:@"file://localhost" withString:@""];
-//    UISaveVideoAtPathToSavedPhotosAlbum(movieFileString, nil, nil, nil);    
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     if (self.onCloseCamera) self.onCloseCamera();
-    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
