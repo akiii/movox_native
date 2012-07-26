@@ -12,7 +12,9 @@
 
 @interface MVMoviePlayerViewController : MPMoviePlayerViewController {
     ActionBlock onPressedCancel;
+    ActionBlock onPressedShare;
 }
 @property (copy, nonatomic) ActionBlock onPressedCancel;
+@property (copy, nonatomic) ActionBlock onPressedShare;
 - (void)playWithContentUrl:(NSURL *)url;
 @end
