@@ -23,12 +23,22 @@
 		B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B824F4B815B883CE00432AF3 /* MovoxTests.m */; };
 		B824F4D315B886BE00432AF3 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */; };
 		B824F4D515B8874900432AF3 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */; };
+		B82690EA15C143BB00B932E1 /* MVRootCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82690E915C143BB00B932E1 /* MVRootCameraViewController.m */; };
+		B82690F415C1940400B932E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82690F315C1940300B932E1 /* MobileCoreServices.framework */; };
+		B82690FB15C1A1DB00B932E1 /* MVMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */; };
+		B82690FD15C1A1F500B932E1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */; };
 		B85D4D4515BBD0C400B5EFA1 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */; };
 		B85D4D4615BBD0C400B5EFA1 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */; };
 		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
 		B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */; };
 		B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */; };
 		B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */; };
+		B8F279A015BC083100605268 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F2799E15BC083100605268 /* gear.png */; };
+		B8F279A115BC083100605268 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F2799F15BC083100605268 /* gear@2x.png */; };
+		B8F279A415BC094700605268 /* MVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F279A315BC094700605268 /* MVNavigationController.m */; };
+		B8F279A715BC0C8F00605268 /* MVRootFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F279A615BC0C8F00605268 /* MVRootFriendsViewController.m */; };
+		B8F279AA15BC4F3400605268 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F279A815BC4F3400605268 /* friends.png */; };
+		B8F279AB15BC4F3400605268 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F279A915BC4F3400605268 /* friends@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +72,13 @@
 		B824F4B815B883CE00432AF3 /* MovoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovoxTests.m; sourceTree = "<group>"; };
 		B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBiOSSDK.framework; path = ../../Documents/FacebookSDK/FBiOSSDK.framework; sourceTree = "<group>"; };
 		B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBiOSSDKResources.bundle; path = ../../Documents/FacebookSDK/FBiOSSDK.framework/Versions/A/Resources/FBiOSSDKResources.bundle; sourceTree = "<group>"; };
+		B82690E815C143BB00B932E1 /* MVRootCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootCameraViewController.h; sourceTree = "<group>"; };
+		B82690E915C143BB00B932E1 /* MVRootCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootCameraViewController.m; sourceTree = "<group>"; };
+		B82690F315C1940300B932E1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMoviePlayerViewController.h; sourceTree = "<group>"; };
+		B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMoviePlayerViewController.m; sourceTree = "<group>"; };
+		B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B826912A15C1C56A00B932E1 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
@@ -75,6 +92,14 @@
 		B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootTabBarController.m; sourceTree = "<group>"; };
 		B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSettingsViewController.h; sourceTree = "<group>"; };
 		B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSettingsViewController.m; sourceTree = "<group>"; };
+		B8F2799E15BC083100605268 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		B8F2799F15BC083100605268 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		B8F279A215BC094700605268 /* MVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNavigationController.h; sourceTree = "<group>"; };
+		B8F279A315BC094700605268 /* MVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNavigationController.m; sourceTree = "<group>"; };
+		B8F279A515BC0C8F00605268 /* MVRootFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootFriendsViewController.h; sourceTree = "<group>"; };
+		B8F279A615BC0C8F00605268 /* MVRootFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootFriendsViewController.m; sourceTree = "<group>"; };
+		B8F279A815BC4F3400605268 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		B8F279A915BC4F3400605268 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82690FD15C1A1F500B932E1 /* MediaPlayer.framework in Frameworks */,
+				B82690F415C1940400B932E1 /* MobileCoreServices.framework in Frameworks */,
 				B824F48E15B883CE00432AF3 /* UIKit.framework in Frameworks */,
 				B824F49015B883CE00432AF3 /* Foundation.framework in Frameworks */,
 				B824F49215B883CE00432AF3 /* CoreGraphics.framework in Frameworks */,
@@ -126,6 +153,8 @@
 		B824F48C15B883CE00432AF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */,
+				B82690F315C1940300B932E1 /* MobileCoreServices.framework */,
 				B824F4D415B8874900432AF3 /* FBiOSSDKResources.bundle */,
 				B824F4D215B886BE00432AF3 /* FBiOSSDK.framework */,
 				B824F48D15B883CE00432AF3 /* UIKit.framework */,
@@ -142,6 +171,7 @@
 			children = (
 				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
 				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
+				B826912A15C1C56A00B932E1 /* MVBlocks.h */,
 				B85D4D4715BBD0E400B5EFA1 /* Common */,
 				B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */,
 				B85D4D4915BBD10F00B5EFA1 /* Main */,
@@ -154,6 +184,7 @@
 		B824F49615B883CE00432AF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8F2799915BC04F300605268 /* Resources */,
 				B824F49715B883CE00432AF3 /* Movox-Info.plist */,
 				B824F49815B883CE00432AF3 /* InfoPlist.strings */,
 				B824F49B15B883CE00432AF3 /* main.m */,
@@ -205,14 +236,33 @@
 			children = (
 				B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */,
 				B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */,
+				B8F279A215BC094700605268 /* MVNavigationController.h */,
+				B8F279A315BC094700605268 /* MVNavigationController.m */,
+				B8F279A515BC0C8F00605268 /* MVRootFriendsViewController.h */,
+				B8F279A615BC0C8F00605268 /* MVRootFriendsViewController.m */,
+				B82690E815C143BB00B932E1 /* MVRootCameraViewController.h */,
+				B82690E915C143BB00B932E1 /* MVRootCameraViewController.m */,
 				B85D4D4A15BBD10F00B5EFA1 /* MVRootMainViewController.h */,
 				B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */,
 				B85D4D4C15BBD10F00B5EFA1 /* MVRootSecondViewController.h */,
 				B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */,
 				B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */,
 				B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */,
+				B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */,
+				B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B8F2799915BC04F300605268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8F2799E15BC083100605268 /* gear.png */,
+				B8F2799F15BC083100605268 /* gear@2x.png */,
+				B8F279A815BC4F3400605268 /* friends.png */,
+				B8F279A915BC4F3400605268 /* friends@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +338,10 @@
 			files = (
 				B824F49A15B883CE00432AF3 /* InfoPlist.strings in Resources */,
 				B824F4D515B8874900432AF3 /* FBiOSSDKResources.bundle in Resources */,
+				B8F279A015BC083100605268 /* gear.png in Resources */,
+				B8F279A115BC083100605268 /* gear@2x.png in Resources */,
+				B8F279AA15BC4F3400605268 /* friends.png in Resources */,
+				B8F279AB15BC4F3400605268 /* friends@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +385,10 @@
 				B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */,
 				B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */,
 				B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */,
+				B8F279A415BC094700605268 /* MVNavigationController.m in Sources */,
+				B8F279A715BC0C8F00605268 /* MVRootFriendsViewController.m in Sources */,
+				B82690EA15C143BB00B932E1 /* MVRootCameraViewController.m in Sources */,
+				B82690FB15C1A1DB00B932E1 /* MVMoviePlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
