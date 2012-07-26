@@ -27,6 +27,7 @@
 		B82690F415C1940400B932E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82690F315C1940300B932E1 /* MobileCoreServices.framework */; };
 		B82690FB15C1A1DB00B932E1 /* MVMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */; };
 		B82690FD15C1A1F500B932E1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */; };
+		B826913715C1E97D00B932E1 /* MVNetworkConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = B826913615C1E97C00B932E1 /* MVNetworkConnector.m */; };
 		B85D4D4515BBD0C400B5EFA1 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */; };
 		B85D4D4615BBD0C400B5EFA1 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */; };
 		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
@@ -79,6 +80,8 @@
 		B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMoviePlayerViewController.m; sourceTree = "<group>"; };
 		B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B826912A15C1C56A00B932E1 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
+		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNetworkConnector.h; sourceTree = "<group>"; };
+		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNetworkConnector.m; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */,
 				B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */,
 				B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */,
+				B826913515C1E97C00B932E1 /* MVNetworkConnector.h */,
+				B826913615C1E97C00B932E1 /* MVNetworkConnector.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				B8F279A715BC0C8F00605268 /* MVRootFriendsViewController.m in Sources */,
 				B82690EA15C143BB00B932E1 /* MVRootCameraViewController.m in Sources */,
 				B82690FB15C1A1DB00B932E1 /* MVMoviePlayerViewController.m in Sources */,
+				B826913715C1E97D00B932E1 /* MVNetworkConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
