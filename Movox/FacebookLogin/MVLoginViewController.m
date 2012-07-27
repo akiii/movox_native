@@ -6,11 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import <FBiOSSDK/FacebookSDK.h>
-
 #import "MVLoginViewController.h"
 #import "MVLoginMainView.h"
-
+#import "MVFacebookSessionController.h"
 
 @interface MVLoginViewController ()
 
@@ -28,15 +26,17 @@
         self.view = mainView;
         
         mainView.onLoginButtonPressed = ^(){
-            if (![FBSession activeSession] || [FBSession activeSession].state != FBSessionStateCreated) {
-                [FBSession setActiveSession:[[FBSession alloc] init]];
-            }
-            [[FBSession activeSession] openWithBehavior:FBSessionLoginBehaviorForcingWebView completionHandler:^(FBSession *session,FBSessionState status, NSError *error) {
-                if (!error) {
-                    if (self.onLoginSuccessed)
-                        self.onLoginSuccessed();
-                }
-            }];
+            MVFacebookSessionController *sessionController = [MVFacebookSessionController sharedObject];
+            
+            sessionController.onSuccess = ^(){
+                if (self.onLoginSuccessed) self.onLoginSuccessed();
+            };
+            
+            sessionController.onFailure = ^(){
+                NSLog(@"login failure");
+            };
+            
+            [sessionController create];
         };
 
     }

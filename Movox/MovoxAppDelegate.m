@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import <FBiOSSDK/FacebookSDK.h>
 #import "MovoxAppDelegate.h"
 #import "MVLoginViewController.h"
+#import "MVFacebookSessionController.h"
 
 @implementation MovoxAppDelegate
 
@@ -20,7 +20,7 @@
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
     // attempt to extract a token from the url
-    return [[FBSession activeSession] handleOpenURL:url];
+    return [[MVFacebookSessionController sharedObject].session handleOpenURL:url];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,7 +29,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    if ([FBSession activeSession].state == FBSessionStateCreated) {
+    if ([[MVFacebookSessionController sharedObject] exist]) {
         MVLoginViewController *loginViewController = [[MVLoginViewController alloc] initWithNibName:nil bundle:nil];        
         [self.window addSubview:loginViewController.view];
         
