@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVBlocks.h"
+
+typedef void (^ButtonPressedBlock)();
 
 @interface MVLoginMainView : UIView {
 
-    ActionBlock onLoginButtonPressed;
+    ButtonPressedBlock onLoginButtonPressed;
 
 }
-@property (copy, nonatomic) ActionBlock onLoginButtonPressed;
+@property (copy, nonatomic) ButtonPressedBlock onLoginButtonPressed;
 @end

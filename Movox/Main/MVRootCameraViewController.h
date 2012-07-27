@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVBlocks.h"
+
+typedef void (^ButtonPressedBlock)();
 
 @interface MVRootCameraViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
-    ActionBlock onCloseCamera;
+    ButtonPressedBlock onCloseCamera;
 }
-@property (copy, nonatomic) ActionBlock onCloseCamera;
+@property (copy, nonatomic) ButtonPressedBlock onCloseCamera;
 - (void)showCameraWithAnimation:(BOOL)animation;
 @end

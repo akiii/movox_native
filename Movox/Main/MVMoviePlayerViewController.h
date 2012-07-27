@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import "MVBlocks.h"
+
+typedef void (^ToolBarButtonPressedBlock)();
 
 @interface MVMoviePlayerViewController : MPMoviePlayerViewController {
-    ActionBlock onPressedCancel;
-    ActionBlock onPressedShare;
+    ToolBarButtonPressedBlock onPressedCancel;
+    ToolBarButtonPressedBlock onPressedShare;
 }
-@property (copy, nonatomic) ActionBlock onPressedCancel;
-@property (copy, nonatomic) ActionBlock onPressedShare;
+@property (copy, nonatomic) ToolBarButtonPressedBlock onPressedCancel;
+@property (copy, nonatomic) ToolBarButtonPressedBlock onPressedShare;
 - (void)playWithContentUrl:(NSURL *)url;
 @end

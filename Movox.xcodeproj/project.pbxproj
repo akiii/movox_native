@@ -33,6 +33,7 @@
 		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
 		B85D4D5115BBD10F00B5EFA1 /* MVRootSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */; };
 		B85D4D5215BBD10F00B5EFA1 /* MVRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */; };
+		B8C1CB7215C283000000992B /* MVFacebookSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1CB7015C283000000992B /* MVFacebookSessionController.m */; };
 		B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */; };
 		B8F279A015BC083100605268 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F2799E15BC083100605268 /* gear.png */; };
 		B8F279A115BC083100605268 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8F2799F15BC083100605268 /* gear@2x.png */; };
@@ -79,21 +80,21 @@
 		B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMoviePlayerViewController.h; sourceTree = "<group>"; };
 		B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMoviePlayerViewController.m; sourceTree = "<group>"; };
 		B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B826912A15C1C56A00B932E1 /* MVBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
 		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNetworkConnector.h; sourceTree = "<group>"; };
 		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNetworkConnector.m; sourceTree = "<group>"; };
-		B826913815C1F36100B932E1 /* MVViewSizeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVViewSizeMacro.h; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
 		B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginViewController.m; sourceTree = "<group>"; };
-		B85D4D4815BBD0E400B5EFA1 /* MVBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBlocks.h; sourceTree = "<group>"; };
 		B85D4D4A15BBD10F00B5EFA1 /* MVRootMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootMainViewController.h; sourceTree = "<group>"; };
 		B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootMainViewController.m; sourceTree = "<group>"; };
 		B85D4D4C15BBD10F00B5EFA1 /* MVRootSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSecondViewController.h; sourceTree = "<group>"; };
 		B85D4D4D15BBD10F00B5EFA1 /* MVRootSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSecondViewController.m; sourceTree = "<group>"; };
 		B85D4D4E15BBD10F00B5EFA1 /* MVRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootTabBarController.h; sourceTree = "<group>"; };
 		B85D4D4F15BBD10F00B5EFA1 /* MVRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootTabBarController.m; sourceTree = "<group>"; };
+		B8C1CB6F15C283000000992B /* MVFacebookSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFacebookSessionController.h; sourceTree = "<group>"; };
+		B8C1CB7015C283000000992B /* MVFacebookSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFacebookSessionController.m; sourceTree = "<group>"; };
+		B8C1CB7115C283000000992B /* MVViewSizeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVViewSizeMacro.h; sourceTree = "<group>"; };
 		B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSettingsViewController.h; sourceTree = "<group>"; };
 		B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSettingsViewController.m; sourceTree = "<group>"; };
 		B8F2799E15BC083100605268 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
@@ -175,8 +176,6 @@
 			children = (
 				B824F49E15B883CE00432AF3 /* MovoxAppDelegate.h */,
 				B824F49F15B883CE00432AF3 /* MovoxAppDelegate.m */,
-				B826912A15C1C56A00B932E1 /* MVBlocks.h */,
-				B826913815C1F36100B932E1 /* MVViewSizeMacro.h */,
 				B85D4D4715BBD0E400B5EFA1 /* Common */,
 				B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */,
 				B85D4D4915BBD10F00B5EFA1 /* Main */,
@@ -231,7 +230,9 @@
 		B85D4D4715BBD0E400B5EFA1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B85D4D4815BBD0E400B5EFA1 /* MVBlocks.h */,
+				B8C1CB6F15C283000000992B /* MVFacebookSessionController.h */,
+				B8C1CB7015C283000000992B /* MVFacebookSessionController.m */,
+				B8C1CB7115C283000000992B /* MVViewSizeMacro.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -405,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B824F4B915B883CE00432AF3 /* MovoxTests.m in Sources */,
+				B8C1CB7215C283000000992B /* MVFacebookSessionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

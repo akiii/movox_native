@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVBlocks.h"
+
+typedef void (^LoginStatusBlock)();
 
 @interface MVLoginViewController : UIViewController {
     
-    ActionBlock onLoginSuccessed;
+    LoginStatusBlock onLoginSuccessed;
 }
-@property (copy, nonatomic) ActionBlock onLoginSuccessed;
+@property (copy, nonatomic) LoginStatusBlock onLoginSuccessed;
 @end
