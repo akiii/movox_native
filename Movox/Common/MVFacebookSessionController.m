@@ -22,29 +22,40 @@ static MVFacebookSessionController *sharedObject = nil;
 
 - (id)init{
     if (self = [super init]) {
-        _session = [[FBSession alloc] init];
+        if (!_session.isOpen) {
+            _session = [[FBSession alloc] init];
+            if (_session.state == FBSessionStateCreatedTokenLoaded) {
+                [_session openWithCompletionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+
+                }];
+            }
+        }
     }
     return self;
 }
 
 - (BOOL)exist{
-    if (self.session.state == FBSessionStateCreated) {
+    if (_session.state == FBSessionStateCreated) {
         return true;
     }
     return false;
 }
 
 - (void)create{
-    if (!self.session || ![self exist]) {
+    if (!_session || ![self exist]) {
         _session = [[FBSession alloc] init];
     }
-    [self.session openWithBehavior:FBSessionLoginBehaviorForcingWebView completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+    [_session openWithBehavior:FBSessionLoginBehaviorForcingWebView completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
         if (!error) {
             if (self.onSuccess) self.onSuccess();
         }else {
             if (self.onFailure) self.onFailure();
         }
     }];
+}
+
+- (void)destroy{
+    [_session closeAndClearTokenInformation];
 }
 
 - (void)dealloc{

@@ -18,4 +18,5 @@ typedef void (^SessionStatusBlock)();
 + (MVFacebookSessionController *)sharedObject;
 - (BOOL)exist;
 - (void)create;
+- (void)destroy;
 @end
