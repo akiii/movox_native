@@ -38,22 +38,21 @@ typedef enum MVRootTabBarTag {
     if (self = [super init]) {
         MVNavigationController *friendsNavigationController = [MVNavigationController navigationControllerWithRootViewController:[[MVRootFriendsViewController alloc] initWithNibName:nil bundle:nil] tabBarTitle:@"friends" tabBarImageName:@"friends.png" tabBarTag:MVRootTabBarTagFriends];
         
-        MVRootMainViewController *mainViewController2 = [[MVRootMainViewController alloc] initWithNibName:nil bundle:nil];
-        mainViewController2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:MVRootTabBarTagMain2];
+        MVNavigationController *homeNavigationController = [MVNavigationController navigationControllerWithRootViewController:[[MVRootMainViewController alloc] initWithNibName:nil bundle:nil] tabBarTitle:@"home" tabBarImageName:@"home.png" tabBarTag:MVRootTabBarTagMain2];
 
         self.cameraViewController = [[MVRootCameraViewController alloc] initWithNibName:nil bundle:nil];
-        self.cameraViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:MVRootTabBarTagCamera];
         self.cameraViewController.onCloseCamera = ^(){
             [self.cameraViewController dismissModalViewControllerAnimated:YES];
             self.selectedIndex = self.preViewControllerTag;
         };
+        MVNavigationController *videoNavigationController = [MVNavigationController navigationControllerWithRootViewController:self.cameraViewController tabBarTitle:@"video" tabBarImageName:@"video.png" tabBarTag:MVRootTabBarTagCamera];
         
         MVRootSecondViewController *secondViewController = [[MVRootSecondViewController alloc] initWithNibName:nil bundle:nil];
         secondViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:MVRootTabBarTagSecond];
         
         MVNavigationController *settingsNavigationController = [MVNavigationController navigationControllerWithRootViewController:[[MVRootSettingsViewController alloc] initWithNibName:nil bundle:nil] tabBarTitle:@"settings" tabBarImageName:@"gear.png" tabBarTag:MVRootTabBarTagSettings];
         
-        [self setViewControllers:[NSArray arrayWithObjects:friendsNavigationController, mainViewController2, cameraViewController, secondViewController, settingsNavigationController, nil] animated:NO];
+        [self setViewControllers:[NSArray arrayWithObjects:friendsNavigationController, homeNavigationController, videoNavigationController, secondViewController, settingsNavigationController, nil] animated:NO];
         
         self.tabBar.frame = CGRectMake(0, SizeOfScreen.height - SizeOfToolBar.height, SizeOfToolBar.width, SizeOfToolBar.height);
         
