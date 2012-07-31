@@ -11,3 +11,4 @@
 #define SizeOfNavigationBar CGSizeMake(SizeOfScreen.width, 40)
 #define SizeOfTabBar        CGSizeMake(SizeOfScreen.width, 49)
 #define SizeOfToolBar       CGSizeMake(SizeOfScreen.width, 49)
+#define SizeOfTableCell     CGSizeMake(SizeOfScreen.width, 44)
