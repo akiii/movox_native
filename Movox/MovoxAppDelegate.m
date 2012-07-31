@@ -8,7 +8,9 @@
 
 #import "MovoxAppDelegate.h"
 #import "MVLoginViewController.h"
+#import "MVIndicatorViewController.h"
 #import "MVFacebookSessionController.h"
+#import "MVFacebookRequestor.h"
 
 @implementation MovoxAppDelegate
 
@@ -34,16 +36,36 @@
         [self.window addSubview:loginViewController.view];
         
         loginViewController.onLoginSuccessed = ^(){
-            [loginViewController.view removeFromSuperview];
+            
+            MVIndicatorViewController *indicatorViewController = [[MVIndicatorViewController alloc] initWithNibName:nil bundle:nil];
+            [self.window addSubview:indicatorViewController.view];
+            
+            MVFacebookRequestor *requestor = [MVFacebookRequestor sharedObject];
+            [requestor setup];
+            
+            requestor.onFinishedSetup = ^(){
+                [loginViewController.view removeFromSuperview];
+                [indicatorViewController.view removeFromSuperview];
+                
+                if (self.tabBarController) self.tabBarController = nil;
+                _tabBarController = [[MVRootTabBarController alloc] init];
+                [self.window addSubview:_tabBarController.view];
+            };            
+        };
+    }else {
+        MVIndicatorViewController *indicatorViewController = [[MVIndicatorViewController alloc] initWithNibName:nil bundle:nil];
+        [self.window addSubview:indicatorViewController.view];
+        
+        MVFacebookRequestor *requestor = [MVFacebookRequestor sharedObject];
+        [requestor setup];
+        
+        requestor.onFinishedSetup = ^(){
+            [indicatorViewController.view removeFromSuperview];
             
             if (self.tabBarController) self.tabBarController = nil;
             _tabBarController = [[MVRootTabBarController alloc] init];
             [self.window addSubview:_tabBarController.view];
-        };        
-    }else {
-        if (self.tabBarController) self.tabBarController = nil;
-        _tabBarController = [[MVRootTabBarController alloc] init];
-        [self.window addSubview:_tabBarController.view];
+        };
     }
     return YES;
 }
