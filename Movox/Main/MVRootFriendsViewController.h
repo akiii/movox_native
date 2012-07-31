@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MVRootFriendsViewController : UIViewController
+@interface MVRootFriendsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

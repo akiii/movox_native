@@ -7,6 +7,9 @@
 //
 
 #import "MVRootSettingsViewController.h"
+#import "MVFacebookSessionController.h"
+#import "MVFacebookRequestor.h"
+#import "MVViewSizeMacro.h"
 
 @interface MVRootSettingsViewController ()
 
@@ -19,6 +22,16 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        UIView *mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SizeOfScreen.width, SizeOfScreen.height - SizeOfStatusBar.height - SizeOfNavigationBar.height - SizeOfTabBar.height)];
+        [self.view addSubview:mainView];
+        
+        UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        float logoutButtonWidth = mainView.frame.size.width * 0.8;
+        float logoutButtonHeight =  mainView.frame.size.height * 0.1;
+        logoutButton.frame = CGRectMake(mainView.frame.size.width * 0.1, mainView.frame.size.height/2, logoutButtonWidth, logoutButtonHeight);
+        [logoutButton setTitle:@"logout" forState:UIControlStateNormal];
+        [logoutButton addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchUpInside];
+        [mainView addSubview:logoutButton];
     }
     return self;
 }
@@ -38,6 +51,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)logout{
+    [[MVFacebookSessionController sharedObject] destroy];
 }
 
 @end

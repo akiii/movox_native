@@ -7,6 +7,7 @@
 //
 
 #import "MVIndicatorViewController.h"
+#import "MVViewSizeMacro.h"
 
 @interface MVIndicatorViewController ()
 
@@ -19,6 +20,15 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.view.backgroundColor = [UIColor blackColor];
+        
+        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        indicatorView.center = self.view.center;
+        indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+        [self.view addSubview:indicatorView];
+        [indicatorView startAnimating];
+//        UIView *blackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SizeOfScreen.width, SizeOfScreen.height)];
+//        [self.view addSubview:blackView];
     }
     return self;
 }

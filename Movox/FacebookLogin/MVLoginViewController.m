@@ -32,9 +32,7 @@
                 if (self.onLoginSuccessed) self.onLoginSuccessed();
             };
             
-            sessionController.onFailure = ^(){
-                NSLog(@"login failure");
-            };
+            sessionController.onFailure = ^(){};
             
             [sessionController create];
         };
