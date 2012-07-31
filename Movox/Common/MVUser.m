@@ -9,5 +9,5 @@
 #import "MVUser.h"
 
 @implementation MVUser
-
+@synthesize facebookId, name, profileImage;
 @end
