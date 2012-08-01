@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVUser.h"
+#import "MVFacebookUser.h"
 
 typedef void (^ActionBlock)();
 
 @interface MVFacebookRequestor : NSObject {
     ActionBlock onFinishedSetup;
 }
-@property (readonly) MVUser *currentUser;
+@property (readonly) MVFacebookUser *currentUser;
 @property (readonly) NSMutableArray *friends;
 @property (copy, nonatomic) ActionBlock onFinishedSetup;
 + (MVFacebookRequestor *)sharedObject;

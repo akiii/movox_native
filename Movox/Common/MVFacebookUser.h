@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MVUser : NSObject
+@interface MVFacebookUser : NSObject
 @property (strong, nonatomic) NSString *facebookId;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) UIImage *profileImage;

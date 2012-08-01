@@ -44,7 +44,7 @@ static MVFacebookRequestor *shared;
     FBRequest *req = [[FBRequest alloc] initWithSession:[MVFacebookSessionController sharedObject].session graphPath:@"me" parameters:params HTTPMethod:@"GET"];
     [req startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         if (!error) {
-            _currentUser = [[MVUser alloc] init];
+            _currentUser = [[MVFacebookUser alloc] init];
             _currentUser.facebookId = [result objectForKey:@"id"];
             _currentUser.name = [result objectForKey:@"name"];
             _currentUser.profileImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[[result objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"]]]];
@@ -61,7 +61,7 @@ static MVFacebookRequestor *shared;
         if (!error) {
             result = [result objectForKey:@"data"];
             for (NSDictionary *fd in result) {
-                MVUser *friend = [[MVUser alloc] init];
+                MVFacebookUser *friend = [[MVFacebookUser alloc] init];
                 friend.facebookId = [fd objectForKey:@"id"];
                 friend.name = [fd objectForKey:@"name"];
                 friend.profileImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[[fd objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"]]]];

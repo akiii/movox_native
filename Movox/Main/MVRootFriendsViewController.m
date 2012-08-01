@@ -74,7 +74,7 @@
         cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SizeOfTableCell.width, SizeOfTableCell.height)];
     }
     
-    MVUser *friend = [[MVFacebookRequestor sharedObject].friends objectAtIndex:indexPath.row];
+    MVFacebookUser *friend = [[MVFacebookRequestor sharedObject].friends objectAtIndex:indexPath.row];
     cell.imageView.image = friend.profileImage;
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16];
     cell.textLabel.text = friend.name;

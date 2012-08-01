@@ -6,8 +6,8 @@
 //
 //
 
-#import "MVUser.h"
+#import "MVFacebookUser.h"
 
-@implementation MVUser
+@implementation MVFacebookUser
 @synthesize facebookId, name, profileImage;
 @end
