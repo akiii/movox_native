@@ -87,8 +87,8 @@
 		B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMoviePlayerViewController.h; sourceTree = "<group>"; };
 		B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMoviePlayerViewController.m; sourceTree = "<group>"; };
 		B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNetworkConnector.h; sourceTree = "<group>"; };
-		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNetworkConnector.m; sourceTree = "<group>"; };
+		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVNetworkConnector.h; path = ../Main/MVNetworkConnector.h; sourceTree = "<group>"; };
+		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVNetworkConnector.m; path = ../Main/MVNetworkConnector.m; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
@@ -256,6 +256,8 @@
 				B8CEED6A15C7ACDB00FF852A /* MVUser.m */,
 				B8CDDAC115C8204600C566BD /* MVIndicatorViewController.h */,
 				B8CDDAC215C8204600C566BD /* MVIndicatorViewController.m */,
+				B826913515C1E97C00B932E1 /* MVNetworkConnector.h */,
+				B826913615C1E97C00B932E1 /* MVNetworkConnector.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,8 +281,6 @@
 				B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */,
 				B82690F915C1A1DB00B932E1 /* MVMoviePlayerViewController.h */,
 				B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */,
-				B826913515C1E97C00B932E1 /* MVNetworkConnector.h */,
-				B826913615C1E97C00B932E1 /* MVNetworkConnector.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";

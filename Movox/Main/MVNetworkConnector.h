@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MVNetworkConnector : NSObject
+typedef enum {
+	RequestMethodGet,
+	RequestMethodPost
+} MVNetworkConnectorRequestMethod;
 
+typedef void (^ActionBlock)();
+
+@interface MVNetworkConnector : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate> {
+
+}
+@property (readonly) long long expectedContentLength;
+@property (readonly) NSMutableData *receivedData;
+@property (copy, nonatomic) ActionBlock onFinished;
+- (void)openUrl:(NSString*)urlString;
+- (void)openUrl:(NSString*)urlString method:(MVNetworkConnectorRequestMethod)method params:(NSString*)params;
 @end
