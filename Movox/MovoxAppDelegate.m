@@ -11,6 +11,7 @@
 #import "MVIndicatorViewController.h"
 #import "MVFacebookSessionController.h"
 #import "MVFacebookRequestor.h"
+#import "NSRails.h"
 
 @implementation MovoxAppDelegate
 
@@ -67,6 +68,9 @@
             [self.window addSubview:_tabBarController.view];
         };
     }
+    
+    [NSRConfig defaultConfig].appURL = @"http://localhost:3000";
+    
     return YES;
 }
 

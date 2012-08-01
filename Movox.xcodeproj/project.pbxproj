@@ -28,6 +28,13 @@
 		B82690FB15C1A1DB00B932E1 /* MVMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82690FA15C1A1DB00B932E1 /* MVMoviePlayerViewController.m */; };
 		B82690FD15C1A1F500B932E1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */; };
 		B826913715C1E97D00B932E1 /* MVNetworkConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = B826913615C1E97C00B932E1 /* MVNetworkConnector.m */; };
+		B844EA2915C8F3C500AFC62D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA1B15C8F3C500AFC62D /* NSData+Base64.m */; };
+		B844EA2A15C8F3C500AFC62D /* NSMutableArray+NSRails.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA1D15C8F3C500AFC62D /* NSMutableArray+NSRails.m */; };
+		B844EA2B15C8F3C500AFC62D /* NSString+Inflection.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA1F15C8F3C500AFC62D /* NSString+Inflection.m */; };
+		B844EA2C15C8F3C500AFC62D /* NSRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA2215C8F3C500AFC62D /* NSRConfig.m */; };
+		B844EA2D15C8F3C500AFC62D /* NSRRemoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA2415C8F3C500AFC62D /* NSRRemoteManagedObject.m */; };
+		B844EA2E15C8F3C500AFC62D /* NSRRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA2615C8F3C500AFC62D /* NSRRemoteObject.m */; };
+		B844EA2F15C8F3C500AFC62D /* NSRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B844EA2815C8F3C500AFC62D /* NSRRequest.m */; };
 		B85D4D4515BBD0C400B5EFA1 /* MVLoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */; };
 		B85D4D4615BBD0C400B5EFA1 /* MVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4415BBD0C400B5EFA1 /* MVLoginViewController.m */; };
 		B85D4D5015BBD10F00B5EFA1 /* MVRootMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85D4D4B15BBD10F00B5EFA1 /* MVRootMainViewController.m */; };
@@ -42,7 +49,7 @@
 		B8CDDABF15C81D4600C566BD /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CDDAB715C81D4600C566BD /* video.png */; };
 		B8CDDAC015C81D4600C566BD /* video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CDDAB815C81D4600C566BD /* video@2x.png */; };
 		B8CDDAC315C8204600C566BD /* MVIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CDDAC215C8204600C566BD /* MVIndicatorViewController.m */; };
-		B8CEED6B15C7ACDB00FF852A /* MVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CEED6A15C7ACDB00FF852A /* MVUser.m */; };
+		B8CEED6B15C7ACDB00FF852A /* MVFacebookUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CEED6A15C7ACDB00FF852A /* MVFacebookUser.m */; };
 		B8F2798A15BBFEA900605268 /* MVRootSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */; };
 		B8F279A415BC094700605268 /* MVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F279A315BC094700605268 /* MVNavigationController.m */; };
 		B8F279A715BC0C8F00605268 /* MVRootFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F279A615BC0C8F00605268 /* MVRootFriendsViewController.m */; };
@@ -89,6 +96,21 @@
 		B82690FC15C1A1F500B932E1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B826913515C1E97C00B932E1 /* MVNetworkConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MVNetworkConnector.h; path = ../Main/MVNetworkConnector.h; sourceTree = "<group>"; };
 		B826913615C1E97C00B932E1 /* MVNetworkConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MVNetworkConnector.m; path = ../Main/MVNetworkConnector.m; sourceTree = "<group>"; };
+		B844EA1A15C8F3C500AFC62D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B844EA1B15C8F3C500AFC62D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B844EA1C15C8F3C500AFC62D /* NSMutableArray+NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NSRails.h"; sourceTree = "<group>"; };
+		B844EA1D15C8F3C500AFC62D /* NSMutableArray+NSRails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NSRails.m"; sourceTree = "<group>"; };
+		B844EA1E15C8F3C500AFC62D /* NSString+Inflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflection.h"; sourceTree = "<group>"; };
+		B844EA1F15C8F3C500AFC62D /* NSString+Inflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Inflection.m"; sourceTree = "<group>"; };
+		B844EA2015C8F3C500AFC62D /* NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRails.h; sourceTree = "<group>"; };
+		B844EA2115C8F3C500AFC62D /* NSRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRConfig.h; sourceTree = "<group>"; };
+		B844EA2215C8F3C500AFC62D /* NSRConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRConfig.m; sourceTree = "<group>"; };
+		B844EA2315C8F3C500AFC62D /* NSRRemoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteManagedObject.h; sourceTree = "<group>"; };
+		B844EA2415C8F3C500AFC62D /* NSRRemoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteManagedObject.m; sourceTree = "<group>"; };
+		B844EA2515C8F3C500AFC62D /* NSRRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteObject.h; sourceTree = "<group>"; };
+		B844EA2615C8F3C500AFC62D /* NSRRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteObject.m; sourceTree = "<group>"; };
+		B844EA2715C8F3C500AFC62D /* NSRRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRequest.h; sourceTree = "<group>"; };
+		B844EA2815C8F3C500AFC62D /* NSRRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRequest.m; sourceTree = "<group>"; };
 		B85D4D4115BBD0C400B5EFA1 /* MVLoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginMainView.h; sourceTree = "<group>"; };
 		B85D4D4215BBD0C400B5EFA1 /* MVLoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLoginMainView.m; sourceTree = "<group>"; };
 		B85D4D4315BBD0C400B5EFA1 /* MVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLoginViewController.h; sourceTree = "<group>"; };
@@ -110,8 +132,8 @@
 		B8CDDAB815C81D4600C566BD /* video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video@2x.png"; sourceTree = "<group>"; };
 		B8CDDAC115C8204600C566BD /* MVIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVIndicatorViewController.h; sourceTree = "<group>"; };
 		B8CDDAC215C8204600C566BD /* MVIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVIndicatorViewController.m; sourceTree = "<group>"; };
-		B8CEED6915C7ACDB00FF852A /* MVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVUser.h; sourceTree = "<group>"; };
-		B8CEED6A15C7ACDB00FF852A /* MVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVUser.m; sourceTree = "<group>"; };
+		B8CEED6915C7ACDB00FF852A /* MVFacebookUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFacebookUser.h; sourceTree = "<group>"; };
+		B8CEED6A15C7ACDB00FF852A /* MVFacebookUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFacebookUser.m; sourceTree = "<group>"; };
 		B8F2798815BBFEA900605268 /* MVRootSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVRootSettingsViewController.h; sourceTree = "<group>"; };
 		B8F2798915BBFEA900605268 /* MVRootSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVRootSettingsViewController.m; sourceTree = "<group>"; };
 		B8F279A215BC094700605268 /* MVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNavigationController.h; sourceTree = "<group>"; };
@@ -156,6 +178,7 @@
 		B824F47E15B883CE00432AF3 = {
 			isa = PBXGroup;
 			children = (
+				B844EA1815C8F3C500AFC62D /* Source */,
 				B824F49515B883CE00432AF3 /* Movox */,
 				B824F4B115B883CE00432AF3 /* MovoxTests */,
 				B824F48C15B883CE00432AF3 /* Frameworks */,
@@ -233,6 +256,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B844EA1815C8F3C500AFC62D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B844EA1915C8F3C500AFC62D /* Categories */,
+				B844EA2015C8F3C500AFC62D /* NSRails.h */,
+				B844EA2115C8F3C500AFC62D /* NSRConfig.h */,
+				B844EA2215C8F3C500AFC62D /* NSRConfig.m */,
+				B844EA2315C8F3C500AFC62D /* NSRRemoteManagedObject.h */,
+				B844EA2415C8F3C500AFC62D /* NSRRemoteManagedObject.m */,
+				B844EA2515C8F3C500AFC62D /* NSRRemoteObject.h */,
+				B844EA2615C8F3C500AFC62D /* NSRRemoteObject.m */,
+				B844EA2715C8F3C500AFC62D /* NSRRequest.h */,
+				B844EA2815C8F3C500AFC62D /* NSRRequest.m */,
+			);
+			name = Source;
+			path = NSRails/nsrails/Source;
+			sourceTree = "<group>";
+		};
+		B844EA1915C8F3C500AFC62D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B844EA1A15C8F3C500AFC62D /* NSData+Base64.h */,
+				B844EA1B15C8F3C500AFC62D /* NSData+Base64.m */,
+				B844EA1C15C8F3C500AFC62D /* NSMutableArray+NSRails.h */,
+				B844EA1D15C8F3C500AFC62D /* NSMutableArray+NSRails.m */,
+				B844EA1E15C8F3C500AFC62D /* NSString+Inflection.h */,
+				B844EA1F15C8F3C500AFC62D /* NSString+Inflection.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		B85D4D4015BBD0C400B5EFA1 /* FacebookLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,8 +306,8 @@
 				B8F8682E15C28630006EE446 /* MVFacebookSessionController.m */,
 				B8F8683015C28A12006EE446 /* MVFacebookRequestor.h */,
 				B8F8683115C28A12006EE446 /* MVFacebookRequestor.m */,
-				B8CEED6915C7ACDB00FF852A /* MVUser.h */,
-				B8CEED6A15C7ACDB00FF852A /* MVUser.m */,
+				B8CEED6915C7ACDB00FF852A /* MVFacebookUser.h */,
+				B8CEED6A15C7ACDB00FF852A /* MVFacebookUser.m */,
 				B8CDDAC115C8204600C566BD /* MVIndicatorViewController.h */,
 				B8CDDAC215C8204600C566BD /* MVIndicatorViewController.m */,
 				B826913515C1E97C00B932E1 /* MVNetworkConnector.h */,
@@ -431,8 +485,15 @@
 				B826913715C1E97D00B932E1 /* MVNetworkConnector.m in Sources */,
 				B8F8682F15C28630006EE446 /* MVFacebookSessionController.m in Sources */,
 				B8F8683215C28A12006EE446 /* MVFacebookRequestor.m in Sources */,
-				B8CEED6B15C7ACDB00FF852A /* MVUser.m in Sources */,
+				B8CEED6B15C7ACDB00FF852A /* MVFacebookUser.m in Sources */,
 				B8CDDAC315C8204600C566BD /* MVIndicatorViewController.m in Sources */,
+				B844EA2915C8F3C500AFC62D /* NSData+Base64.m in Sources */,
+				B844EA2A15C8F3C500AFC62D /* NSMutableArray+NSRails.m in Sources */,
+				B844EA2B15C8F3C500AFC62D /* NSString+Inflection.m in Sources */,
+				B844EA2C15C8F3C500AFC62D /* NSRConfig.m in Sources */,
+				B844EA2D15C8F3C500AFC62D /* NSRRemoteManagedObject.m in Sources */,
+				B844EA2E15C8F3C500AFC62D /* NSRRemoteObject.m in Sources */,
+				B844EA2F15C8F3C500AFC62D /* NSRRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,3 @@
+[submodule "NSRails"]
+	path = NSRails
+	url = git@github.com:dingbat/nsrails.git
