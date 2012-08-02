@@ -9,6 +9,7 @@
 #import <FBiOSSDK/FacebookSDK.h>
 #import "MVFacebookRequestor.h"
 #import "MVFacebookSessionController.h"
+#import "MVRUser.h"
 
 static MVFacebookRequestor *shared;
 
@@ -49,6 +50,10 @@ static MVFacebookRequestor *shared;
             _currentUser.name = [result objectForKey:@"name"];
             _currentUser.profileImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[[result objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"]]]];
             if (self.onGotCurrentUser) self.onGotCurrentUser();
+            
+            MVRUser *user = [[MVRUser alloc] init];
+            user.facebookId = _currentUser.facebookId;
+            [user remoteCreate:nil];
         }
     }];
 }
