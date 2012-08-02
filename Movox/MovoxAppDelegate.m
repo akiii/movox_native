@@ -11,7 +11,7 @@
 #import "MVIndicatorViewController.h"
 #import "MVFacebookSessionController.h"
 #import "MVFacebookRequestor.h"
-#import "NSRails.h"
+#import "NSRConfig.h"
 
 @implementation MovoxAppDelegate
 
